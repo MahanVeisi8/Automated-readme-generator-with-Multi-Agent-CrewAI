@@ -2,6 +2,9 @@
 
 This repository showcases a **fully automated** system for generating a professional and well-structured `README.md` file. Leveraging **Multi-Agent CrewAI** combined with powerful models like **LLaMA 3 - 70B**, the system analyzes project structures, preferred documentation styles, and code details to automatically produce a stunning README!
 
+![model](asset/model.jpg)
+
+
 🔗 **References to Previous Work**  
 This project builds upon previous implementations from [**Readahead Optimization using ML Models**](https://github.com/MahanVeisi8/Readahead-Optimization-Using-ML-Models) and leverages the README style from projects like [**RL Practices - DQN**](https://github.com/MahanVeisi8/RL_practices/tree/main/Cartpole/1%20-%20DQN).
 
