@@ -1,4 +1,7 @@
 # 🚀 Automated README Generator using Multi-Agent CrewAI 🤖
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1LQAnuuqdHNWhfrBc6KH03WDKyTlc4AeR?usp=sharing)
+![Python](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9-blue)
+![Status](https://img.shields.io/badge/status-active-green)
 
 This repository showcases a **fully automated** system for generating a professional and well-structured `README.md` file. Leveraging **Multi-Agent CrewAI** combined with powerful models like **LLaMA 3 - 70B**, the system analyzes project structures, preferred documentation styles, and code details to automatically produce a stunning README!
 
