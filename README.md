@@ -118,7 +118,7 @@ This repository provides a comprehensive implementation of [Project Name], a [br
 This project provides a comprehensive implementation of [Project Name], demonstrating [key findings or achievements]. The results show [briefly describe the results], highlighting the effectiveness of [key components or techniques].
 ```
 
-For the **full style template found** by the Style Crew, you can check the `style_found_output.txt` in the [assets directory](path-to-asset/style_found_output.txt).
+For the **full style template found** by the Style Crew, you can check the `style_found_output.txt` in the [assets directory](asset/style_found_output.txt).
 
 
 ### 2. **Code Crew** 💻
