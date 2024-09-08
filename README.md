@@ -57,28 +57,69 @@ To get started with the LLM, we integrate it with **Langchain** and **CREW AI**,
 
 This setup allows you to fully automate the README generation process without worrying about infrastructure or heavy computation.
 
-
-
 ## 🤖 **CREW AI: Agents and Their Roles**
 
 To automate the creation of the README, the project divides tasks among three specialized agents—each responsible for a distinct aspect of the documentation process. Here’s a breakdown:
 
 ### 1. **Style Crew** 📝
-The Style Crew ensures that the generated README matches the preferred style by analyzing a sample README provided by the user. In this case, we used the README from [RL Practices - DQN](https://github.com/MahanVeisi8/RL_practices/tree/main/Cartpole/1%20-%20DQN).
+The **Style Crew** ensures that the generated README matches the preferred style by analyzing a sample README provided by the user. In this case, we used the README from [RL Practices - DQN](https://github.com/MahanVeisi8/RL_practices/tree/main/Cartpole/1%20-%20DQN).
 
 - **Directory Analyzer**: Scans the directories to locate the README.md files for analysis.
 - **Content Analyzer**: Reads and extracts the style, structure, and key elements from the sample README.
 - **Template Creator**: Based on the analysis, this agent generates a reusable README template, which serves as a skeleton for the final output.
 
-Sample Output from the Style Crew:
-```
+### Sample Output from the Style Crew:
+This is an excerpt from the **first part of the final analyzed README** that the Style Crew generated based on the preferred style:
+
+```md
 # Introduction
 
 This repository provides a comprehensive implementation of [Project Name], a [brief description of the project]. The project aims to [briefly describe the project's objective].
-...
+
+## Setup
+
+### Prerequisites
+
+* List of prerequisites, e.g., Python version, libraries, etc.
+* Installation instructions, e.g., pip install, etc.
+
+### Environment Setup
+
+* Instructions for setting up the environment, e.g., creating a virtual environment, etc.
+
+## Implementing Key Components
+
+### [Component 1]
+
+* Brief description of the component
+* Code snippet or example
+* Explanation of the component's functionality
+
+### [Component 2]
+
+* Brief description of the component
+* Code snippet or example
+* Explanation of the component's functionality
+
+## Results and Performance Analysis
+
+### [Result 1]
+
+* Description of the result, including any visual aids, e.g., images, tables, etc.
+* Analysis of the result, including any relevant metrics or statistics
+
+### [Result 2]
+
+* Description of the result, including any visual aids, e.g., images, tables, etc.
+* Analysis of the result, including any relevant metrics or statistics
+
+## Summary
+
+This project provides a comprehensive implementation of [Project Name], demonstrating [key findings or achievements]. The results show [briefly describe the results], highlighting the effectiveness of [key components or techniques].
 ```
 
----
+For the **full style template found** by the Style Crew, you can check the `style_found_output.txt` in the [assets directory](path-to-asset/style_found_output.txt).
+
 
 ### 2. **Code Crew** 💻
 The Code Crew dives into the project's codebase to extract technical details that need to be documented in the README. This crew ensures that important components like algorithms, functions, and models are clearly described.
