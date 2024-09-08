@@ -3,20 +3,18 @@
 ![Python](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9-blue)
 ![Status](https://img.shields.io/badge/status-active-green)
 
-This repository showcases a **fully automated** system for generating a professional and well-structured `README.md` file. Leveraging **Multi-Agent CrewAI** combined with powerful models like **LLaMA 3 - 70B**, the system analyzes project structures, preferred documentation styles, and code details to automatically produce a stunning README!
+Creating the perfect README has always been a crucial part of any project. It's the first impression developers and collaborators get from your repository. However, crafting a well-structured, detailed, and visually appealing README takes time and effort. That's why I decided to automate this process using **CrewAI** and **LLaMA 3 - 70B**.
 
-![model](asset/model.jpg)
+The core of this system revolves around **three collaborative crews**:
+1. **Style Crew**: This crew analyzes a sample README that reflects my preferred style, such as the one from [RL Practices - DQN](https://github.com/MahanVeisi8/RL_practices/tree/main/Cartpole/1%20-%20DQN).
+2. **Code Crew**: This crew digs deep into the project code, like in [Readahead Optimization using ML Models](https://github.com/MahanVeisi8/Readahead-Optimization-Using-ML-Models), extracting key information to ensure the README is accurate and thorough.
+3. **README Generator Crew**: Combining insights from the Style and Code Crews, this team writes the final README, complete with structure, details, and creative touches.
 
+The project overview below demonstrates how the three crews work together, processing inputs like sample READMEs and source code, powered by **CrewAI** and the powerful **LLaMA 3 - 70B** model.
 
-🔗 **References to Previous Work**  
-This project builds upon previous implementations from [**Readahead Optimization using ML Models**](https://github.com/MahanVeisi8/Readahead-Optimization-Using-ML-Models) and leverages the README style from projects like [**RL Practices - DQN**](https://github.com/MahanVeisi8/RL_practices/tree/main/Cartpole/1%20-%20DQN).
+![CrewAI Project Overview](asset/model.jpg)
 
-### Key Features:
-- **Multi-Agent Collaboration**: Uses multiple agents in CREW AI to divide the work and generate comprehensive documentation.
-- **Automated Style Detection**: Learns the preferred README style based on project specifications.
-- **Code Analysis and Readability**: Reviews the codebase and ensures accurate technical descriptions.
-
-![CrewAI Project Overview](path-to-your-image.png)
+With this setup, I’ve automated the task of producing top-quality, personalized READMEs that align perfectly with my style preferences—making the process faster, consistent, and fun!
 
 ---
 
