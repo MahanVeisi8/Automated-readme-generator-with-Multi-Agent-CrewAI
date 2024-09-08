@@ -220,12 +220,10 @@ Final README saved to: FINAL_README.md
 *For the complete output, check out the file [FINAL_README.md](asset/FINAL_README.md)*
 
 ---
-## 📊 Results
-
-This project showed that **CrewAI** can generate high-quality, accurate, and visually appealing documentation with minimal manual effort. The generated README files align with the project’s technical details while maintaining readability and engagement.
-
----
 
 ## 🔚 Conclusion
 
-Using **CrewAI**, writing comprehensive and structured documentation is fully automated. This system saves time and ensures that even technically complex projects like [Readahead Optimization](https://github.com/MahanVeisi8/Readahead-Optimization-Using-ML-Models) have well-maintained, high-quality READMEs without the need for extensive manual work.
+**CrewAI** effectively automates the creation of high-quality, structured documentation with minimal manual effort. Using **LLaMA 3 - 70B**, the project balances efficiency and content generation, but more powerful LLMs like **GPT-4** or **PaLM 2** could enhance analysis for larger, more complex projects.
+
+For technical challenges like [Readahead Optimization](https://github.com/MahanVeisi8/Readahead-Optimization-Using-ML-Models), **CrewAI** proves that well-maintained, comprehensive documentation can be generated efficiently without sacrificing quality.
+
