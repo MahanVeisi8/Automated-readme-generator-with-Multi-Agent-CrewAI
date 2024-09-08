@@ -128,12 +128,13 @@ The Code Crew dives into the project's codebase to extract technical details tha
 - **ML Analyzer**: Reads and analyzes machine learning methods and their implementation in the code.
 - **Report Writer**: Generates a structured report based on the analysis, which is then included in the README.
 
-For example, in the case of [Readahead Optimization using ML Models](https://github.com/MahanVeisi8/Readahead-Optimization-Using-ML-Models), this crew extracted key details about the model training process and important results.
+For instance, in [Readahead Optimization using ML Models](https://github.com/MahanVeisi8/Readahead-Optimization-Using-ML-Models), the Code Crew extracted critical details about the training process, models used, and performance metrics.
 
 ---
 
 ### 3. **README Generator Crew** 📄
-This final crew is responsible for combining the findings from both the Style and Code Crews to generate a polished README.
+
+The **README Generator Crew** is responsible for compiling the insights from both the **Style Crew** and **Code Crew** into a polished, professional README.
 
 - **File Reader**: Reads the output from the Style and Code Crews to merge content.
 - **Content Merger**: Combines the style template with the technical content to produce a coherent and structured README draft.
@@ -219,13 +220,12 @@ Final README saved to: FINAL_README.md
 *For the complete output, check out the file [FINAL_README.md](asset/FINAL_README.md)*
 
 ---
-
 ## 📊 Results
 
-This project demonstrated that AI-based automation tools, such as **CrewAI**, can effectively generate high-quality documentation with minimal manual intervention. The generated README files are not only accurate but also engaging, visually appealing, and professional.
+This project showed that **CrewAI** can generate high-quality, accurate, and visually appealing documentation with minimal manual effort. The generated README files align with the project’s technical details while maintaining readability and engagement.
 
 ---
 
 ## 🔚 Conclusion
 
-With **CrewAI**, writing complex, structured documentation becomes fully automated, saving time and maintaining high-quality standards. This system is perfect for projects like [Readahead Optimization](https://github.com/MahanVeisi8/Readahead-Optimization-Using-ML-Models), where extensive technical details need to be documented alongside a preferred style. 
+Using **CrewAI**, writing comprehensive and structured documentation is fully automated. This system saves time and ensures that even technically complex projects like [Readahead Optimization](https://github.com/MahanVeisi8/Readahead-Optimization-Using-ML-Models) have well-maintained, high-quality READMEs without the need for extensive manual work.
