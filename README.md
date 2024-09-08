@@ -17,21 +17,6 @@ The project overview below demonstrates how the three crews work together, proce
 With this setup, I’ve automated the task of producing top-quality, personalized READMEs that align perfectly with my style preferences—making the process faster, consistent, and fun!
 
 
-
-## 📋 Table of Contents
-
-- [Introduction](#introduction)
-- [Installation and Setup](#installation-and-setup)
-- [How CrewAI Works](#how-crewAI-works)
-  - [Analyzing Style](#analyzing-style)
-  - [Code Structure Review](#code-structure-review)
-  - [Generating README](#generating-readme)
-- [Sample README Output](#sample-readme-output)
-- [Results](#results)
-- [Conclusion](#conclusion)
-
----
-
 ## 🧠 **LLM Setup and Agents**
 
 This project leverages the powerful **LLaMA 3 - 70B** language model to analyze and generate natural language content. By using a combination of Langchain and CREW AI, we've broken down the README creation task into smaller, manageable steps, allowing each crew to handle specific responsibilities.
