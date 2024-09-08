@@ -32,29 +32,87 @@ With this setup, I’ve automated the task of producing top-quality, personalize
 
 ---
 
-## 📖 Introduction
+## 🧠 **LLM Setup and Agents**
 
-This project demonstrates how **Multi-Agent CrewAI** automates the generation of `README.md` files by analyzing the project structure, identifying desired styles, and reviewing the code for essential technical details. The result is a beautifully formatted and professionally structured README.
+This project leverages the powerful **LLaMA 3 - 70B** language model to analyze and generate natural language content. By using a combination of Langchain and CREW AI, we've broken down the README creation task into smaller, manageable steps, allowing each crew to handle specific responsibilities.
+
+### **Why LLaMA 3 - 70B?**
+LLaMA 3 - 70B strikes a balance between computational efficiency and power, making it an ideal choice for natural language tasks without the overhead of more expensive models like GPT-4. Although we could have used stronger models, **LLaMA 3 - 70B** provides impressive results in the free tier, making it accessible and powerful for most documentation tasks.
+
+> *Note*: Some of the more powerful paid LLMs include GPT-4, Claude, and PaLM 2, but for this project, we focused on a cost-efficient solution without compromising quality.
+
+### **Setting Up the LLM**
+
+To get the LLM working, we initialize it using the **Langchain** and **CREW AI** integration. The model handles natural language processing (NLP) tasks such as reading content, understanding code structure, and generating readable documentation.
+
+```bash
+pip install --upgrade langchain langchain_core crewai langchain_groq
+```
+
+Set up the **GROQ API Key** environment variable:
+```python
+import os
+os.environ["GROQ_API_KEY"] = "your-key-here"
+```
 
 ---
 
-## 🛠 Installation and Setup
+## 🤖 **CREW AI: Agents and Their Roles**
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-repo/automated-readme-generator.git
-   ```
-2. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. **Set Up API Keys**:
-   Set up your **GROQ API Key** and other environment variables:
-   ```bash
-   export GROQ_API_KEY=your-key-here
-   ```
+To automate the creation of the README, the project divides tasks among three specialized agents—each responsible for a distinct aspect of the documentation process. Here’s a breakdown:
+
+### 1. **Style Crew** 📝
+The Style Crew ensures that the generated README matches the preferred style by analyzing a sample README provided by the user. In this case, we used the README from [RL Practices - DQN](https://github.com/MahanVeisi8/RL_practices/tree/main/Cartpole/1%20-%20DQN).
+
+- **Directory Analyzer**: Scans the directories to locate the README.md files for analysis.
+- **Content Analyzer**: Reads and extracts the style, structure, and key elements from the sample README.
+- **Template Creator**: Based on the analysis, this agent generates a reusable README template, which serves as a skeleton for the final output.
+
+Sample Output from the Style Crew:
+```
+# Introduction
+
+This repository provides a comprehensive implementation of [Project Name], a [brief description of the project]. The project aims to [briefly describe the project's objective].
+...
+```
 
 ---
+
+### 2. **Code Crew** 💻
+The Code Crew dives into the project's codebase to extract technical details that need to be documented in the README. This crew ensures that important components like algorithms, functions, and models are clearly described.
+
+- **File Finder**: Identifies relevant code files and passes them to the next agent for analysis.
+- **ML Analyzer**: Reads and analyzes machine learning methods and their implementation in the code.
+- **Report Writer**: Generates a structured report based on the analysis, which is then included in the README.
+
+For example, in the case of [Readahead Optimization using ML Models](https://github.com/MahanVeisi8/Readahead-Optimization-Using-ML-Models), this crew extracted key details about the model training process and important results.
+
+---
+
+### 3. **README Generator Crew** 📄
+This final crew is responsible for combining the findings from both the Style and Code Crews to generate a polished README.
+
+- **File Reader**: Reads the output from the Style and Code Crews to merge content.
+- **Content Merger**: Combines the style template with the technical content to produce a coherent and structured README draft.
+- **README Editor**: Finalizes the draft by adding creative touches like emojis, formatting enhancements, and technical precision.
+
+---
+
+### **🚀 Running the Crews**
+
+The entire process is automated and implemented in **Google Colab** for easy use. Simply run the notebook, and the crews will work together to generate your README.
+
+```bash
+git clone https://github.com/your-repo/automated-readme-generator.git
+pip install -r requirements.txt
+```
+
+Once the agents complete their tasks, you’ll have a professional README ready to go, saving hours of manual work.
+
+---
+
+This section sets the stage for discussing the final outputs (such as showing the `style_found_output.txt` and `FINAL_README.md` files) and will smoothly lead into discussing the result of the style analysis and the final README generated by the crews.
+
 
 ## 🤖 How CrewAI Works
 
