@@ -1,0 +1,37 @@
+```
+**Machine Learning Report**
+
+**Problem Definition:**
+The project aims to optimize the Readahead feature of the Linux Page Cache under varying workloads using machine learning techniques. The problem is to develop a model that dynamically adjusts the Readahead size based on workload characteristics.
+
+**Objectives:**
+
+1. Data Collection: Gather data on various I/O operations using RocksDB benchmarks and Linux's LTTng tracing framework.
+2. Feature Engineering: Process the collected data to extract relevant features.
+3. Model Training: Implement and train different models (Decision Tree, Neural Network, Random Forest) to classify workload types and suggest optimal Readahead sizes.
+4. Performance Evaluation: Compare the performance of the models and determine the best approach.
+
+**Methods:**
+
+1. **Feature Importance Analysis:** Random Forest Classifier was used to analyze feature importance, and non-important features were removed.
+2. **Dimensionality Reduction:** T-SNE was used to visualize the data in 2D.
+3. **Model Training:**
+	* **Neural Network:** MLPClassifier was used with hidden layers of 64 and 32 neurons. The model was trained using Stratified K-Fold Cross-Validation, and the average accuracy was 99.85%.
+	* **Decision Tree:** DecisionTreeClassifier was used, and the accuracy was 100.00%.
+	* **Random Forest:** RandomForestClassifier was used with 100 estimators, and the accuracy was 100.00%.
+
+**Results:**
+The results show that both the Decision Tree and Random Forest models achieved perfect accuracy, while the Neural Network model had a slightly lower accuracy.
+
+**Performance Comparison:**
+
+| Model            | Accuracy  | Notes                                       |
+|------------------|-----------|---------------------------------------------|
+| Decision Tree    | 100.00%   | Simple, interpretable, perfect accuracy     |
+| Neural Network   | 99.85%    | High accuracy, complex model with slight variability in precision |
+| Random Forest    | 100.00%   | Combines multiple trees for perfect accuracy and generalization |
+
+**Conclusion:**
+The project developed and compared three models to optimize the Readahead feature under varying workloads. The Random Forest model stands out for its combination of accuracy and interpretability, making it a strong candidate for real-time systems that require dynamic adjustment of Readahead sizes based on current workloads.
+```
+The report is generated and written to a file named "ML_Report".
