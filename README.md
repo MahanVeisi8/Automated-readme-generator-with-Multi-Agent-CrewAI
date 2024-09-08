@@ -216,7 +216,7 @@ This project provides a comprehensive implementation of optimizing the Readahead
 Final README saved to: FINAL_README.md
 ```
 
-*For the complete output, check out the file [FINAL_README.md](FINAL_README.md)*
+*For the complete output, check out the file [FINAL_README.md](asset/FINAL_README.md)*
 
 ---
 
