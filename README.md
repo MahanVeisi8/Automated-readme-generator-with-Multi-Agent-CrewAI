@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9-blue)
 ![Status](https://img.shields.io/badge/status-active-green)
 
-Creating the perfect README has always been a crucial part of any project. It's the first impression developers and collaborators get from your repository. However, crafting a well-structured, detailed, and visually appealing README takes time and effort. That's why I decided to automate this process using **CrewAI** and **LLaMA 3 - 70B**.
+Creating a perfect README has always been a crucial part of any project. It's the first impression developers and collaborators get from your repository. However, crafting a well-structured, detailed, and visually appealing README takes time and effort. That's why I decided to automate this process using **CrewAI** and **LLaMA 3 - 70B**.
 
 The core of this system revolves around **three collaborative crews**:
 1. **Style Crew**: This crew analyzes a sample README that reflects my preferred style, such as the one from [RL Practices - DQN](https://github.com/MahanVeisi8/RL_practices/tree/main/Cartpole/1%20-%20DQN).
